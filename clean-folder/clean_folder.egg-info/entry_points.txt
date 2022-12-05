@@ -1,0 +1,2 @@
+[console_skripts]
+startgame = clean_folder.clean:sort_func

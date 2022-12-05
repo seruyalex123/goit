@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: clean-folder
+Version: 0.0.1
+Summary: program which sorte your folders for suff_files
+Home-page: https://github.com/seruyalex123/goit/blob/main/dz_sort_goit.py
+Author: Oleksandr Soryi
+Author-email: seruyalex@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
