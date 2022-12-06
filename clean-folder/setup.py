@@ -13,6 +13,6 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent'],
     packages=find_namespace_packages(),
-    entry_points={'console_skripts': [
-        'startgame=clean_folder.clean:sort_func']}
+    entry_points={'console_scripts': [
+        'clean_folder=clean_folder.dz_sort_goit:main']}
 )
