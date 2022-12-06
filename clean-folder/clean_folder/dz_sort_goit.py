@@ -32,8 +32,8 @@ def normalize(name: str) -> str:
     return t_name
 
 
-def sort_func(path_dir):
-    cur_dir = Path(path_dir)
+def sort_func(path_dir: Path):
+    cur_dir = path_dir
     dir_path = []
 
     for root, dirs, files in os.walk(path_dir):
@@ -68,6 +68,18 @@ def sort_func(path_dir):
         extract_dir = fr"{path_dir}/Archives/{os.path.splitext(archive)[0]}"
         with ZipFile(fr"{path_dir}/Archives/{archive}") as arch:
             arch.extractall(extract_dir)
+
+
+def main():
+    try:
+        path = Path(argv[1])
+    except IndexError:
+        print('Type path to folder')
+        return None
+    if not path.exists():
+        print('Folder is not exist. Try again.')
+        return None
+    sort_func(path)
 
 if __name__ == "__main__":
     path_d = input('[+] Введите путь к директории для сортировки: ')

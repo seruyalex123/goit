@@ -1,2 +1,3 @@
-[console_skripts]
-startgame = clean_folder.clean:sort_func
+[console_scripts]
+clean_folder = clean_folder.dz_sort_goit:main
+
